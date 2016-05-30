@@ -8,7 +8,7 @@ console.log( word);
 
 var word = inflect( "метр", 15, ["ов","","а"]);
 console.log( word);
-// мутров
+// метров
 
 ## Developing
 
