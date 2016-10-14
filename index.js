@@ -10,8 +10,9 @@ function Inflect( word_base, number, suffix_array) {
     if( numberStr.length > 0)
     {
         var lastDigit = 1*numberStr[numberStr.length-1];
-        
-        if ( 11 <= number && number <= 14){
+        var last2Digits = 10*numberStr[numberStr.length-2]+lastDigit;
+
+        if ( number > 10 && 11 <= last2Digits && last2Digits <= 14 ){
             result += suffix_array[0];
         } else {
             if( lastDigit == 1)
